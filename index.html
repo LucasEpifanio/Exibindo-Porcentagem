@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Exibindo Porcentagem</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>As cidades com as Maiores Populações</h1>
+    <form>
+      <select id="cidadeSelector" onchange="atualizarDados()">
+        <option value="">Selecione uma cidade</option>
+        <option value="Belem, Para">Belém, Pará</option>
+        <option value="Manaus, Amazonas">Manaus, Amazonas</option>
+        <option value="Sao Luis, Maranhao">São Luís, Maranhão</option>
+        <option value="Recife, Pernambuco">Recife, Pernambuco</option>
+        <option value="Salvador, Bahia">Salvador, Bahia</option>
+        <option value="Fortaleza, Ceara">Fortaleza, Ceará</option>
+        <option value="Porto Alegre, Rio Grande do Sul">Porto Alegre, Rio Grande do Sul</option>
+        <option value="Belo Horizonte, Minas Gerais">Belo Horizonte, Minas Gerais</option>
+        <option value="Rio de Janeiro, Rio de Janeiro">Rio de Janeiro, Rio de Janeiro</option>
+        <option value="São Paulo, São Paulo">São Paulo, São Paulo</option>
+      </select>
+    </form>
+    <div id="dadosCidade" style="display: none;">
+      <h3 id="nomeCidade"></h3>
+      <div>
+        <div class="barra-progresso">
+          <div id="barraProgressoFilho" class="barra-progresso-filho"></div>
+          <div id="porcentagemNumero" class="porcentagem-numero"></div>
+        </div>
+        <span class="valor-min">0</span>
+        <span class="valor-max">100</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="javascript.js"></script>
+</body>
+
+</html>
